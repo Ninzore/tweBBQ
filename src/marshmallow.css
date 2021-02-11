@@ -1,0 +1,84 @@
+.card {
+    box-sizing: border-box;
+}
+.card-wrapper {
+transform: left top;
+transform-origin: scale(0.996667);
+background-color: #F3969A;
+display: block;
+overflow: hidden;
+width: 600px;
+text-align: center;
+padding: 10px 10px 0px 10px;
+}
+.message-card {
+padding: 10px 10px 0px 10px;
+box-sizing: border-box;
+text-align: center;
+min-height: 220px;
+width: 600px;
+margin: auto;
+display: block;
+}
+.card-body {
+padding: 10px 10px 0px 10px;
+box-sizing: border-box;
+text-align: center;
+width: 600px;
+margin: auto;
+display: block;
+background-color: white;
+border-radius: 8px;
+
+}
+.content-wrapper {
+position: relative;
+display: block;
+text-align: center;
+max-width: 520px;
+padding: 42px 0 20px;
+display: flex;
+align-items: center;
+margin: auto;
+-webkit-box-direction: normal;
+}
+.content {
+position: relative;
+z-index: 2;
+box-sizing: border-box;
+display: block;
+font-size: 24px;
+color: #333333;
+font-family: SourceHan Sans;
+font-weight: 400;
+-webkit-font-smoothing: antialiased;
+line-height: 44px;
+white-space: pre-wrap;
+text-align: left;
+word-break: break-all;
+}
+.logo-wrapper {
+height: 50px;
+padding-top: 5px;
+display: block;
+text-align: center;
+line-height: 1.5em;
+}
+.logo {
+height: 40px;
+width: 40px;
+vertical-align: middle;
+}
+.brand {
+padding: 0.5em 0;
+text-align: center;
+display: flex;
+justify-content: center;
+font-family: SourceHan Sans;
+color: #aaa;
+line-height: 1.5em;
+font-size: 1rem;
+-webkit-font-smoothing: antialiased;
+align-items: center;
+-webkit-box-align: center;
+}
