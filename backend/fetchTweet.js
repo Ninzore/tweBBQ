@@ -86,39 +86,6 @@ function tweetElem(tweet_str) {
     return elem;
 }
 
-// async function tweetElem(tweet) {
-//     let elem = {};
-//     elem.text = ('full_text' in tweet) ? tweet.full_text : tweet.text;
-//     // console.log(tweet)
-//     if ("is_quote_status" in tweet && tweet.is_quote_status == true) {
-//         let quote_tweet = await getSingleTweet(tweet.quoted_status_id_str);
-//         // quote_tweet = tweetElem(quote_tweet)
-//         elem.quote = ('full_text' in quote_tweet) ? quote_tweet.full_text : quote_tweet.text
-//     }
-//     if ("in_reply_to_status_id" in tweet && tweet.in_reply_to_status_id != null) {
-//         elem.reply = [];
-//         let reply_tweet = await getSingleTweet(tweet.in_reply_to_status_id_str);
-//         reply_tweet = await tweetElem(reply_tweet);
-
-//         elem.reply.push(reply_tweet);
-
-//         console.log(elem)
-//         // reply_tweet = tweetElem(reply_tweet);
-        
-//     }
-//     if ("card" in tweet) {
-//         if (/poll\dchoice/.test(tweet.card.name)) {
-//             let nchoice = parseInt(/\d/.exec(tweet.card.name)[0]);
-//             elem.choice = [];
-//             for (i = 1; i < nchoice + 1; i++) {
-//                 lable = tweet.card.binding_values[`choice${i}_label`].string_value;
-//                 elem.choice.push(lable);
-//             }
-//         }
-//     }
-//     return elem;
-// }
-
 function complex(twitter_url) {
     let tweet_id = /status\/(\d+)/i.exec(twitter_url)[1];
     return new Promise((resolve) => {
@@ -133,5 +100,3 @@ function complex(twitter_url) {
 }
 
 module.exports = {complex};
-
-complex("https://twitter.com/MahiroYukishiro/status/1291681562753343488")
